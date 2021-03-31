@@ -58,4 +58,20 @@ public class SinglyLinkedList {
         }
         head = head.next;
     }
+
+    public void deleteAtTail() {
+        if (isEmpty()) {
+            System.out.println("Error...LinkedList is Empty.");
+            return;
+        }
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+        Node temp = head;
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
+        temp.next = null;
+    }
 }
