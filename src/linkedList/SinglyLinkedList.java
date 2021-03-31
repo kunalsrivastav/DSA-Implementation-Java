@@ -37,4 +37,17 @@ public class SinglyLinkedList {
         newNode.next = head;
         head = newNode;
     }
+
+    public void insertAtTail(int data) {
+        if (isEmpty()) {
+            head = new Node(data);
+            return;
+        }
+        Node newNode = new Node(data);
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = newNode;
+    }
 }
