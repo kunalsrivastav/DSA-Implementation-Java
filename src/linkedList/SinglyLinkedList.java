@@ -8,7 +8,7 @@
 package linkedList;
 
 public class SinglyLinkedList {
-    class Node {
+    static class Node {
         int data;
         Node next;
 
