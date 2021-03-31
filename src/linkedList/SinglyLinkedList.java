@@ -98,4 +98,8 @@ public class SinglyLinkedList {
             temp = temp.next;
         }
     }
+
+    public void deleteLinkedList() {
+        head = null;
+    }
 }
