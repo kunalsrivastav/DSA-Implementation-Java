@@ -86,4 +86,16 @@ public class SinglyLinkedList {
             temp = temp.next;
         }
     }
+
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Empty...");
+            return;
+        }
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + (temp.next != null ? " -> " : "."));
+            temp = temp.next;
+        }
+    }
 }
