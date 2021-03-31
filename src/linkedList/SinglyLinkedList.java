@@ -23,4 +23,8 @@ public class SinglyLinkedList {
     public SinglyLinkedList() {
         this.head = null;
     }
+
+    public boolean isEmpty() {
+        return head == null;
+    }
 }
