@@ -50,4 +50,12 @@ public class SinglyLinkedList {
         }
         temp.next = newNode;
     }
+
+    public void deleteAtHead() {
+        if (isEmpty()) {
+            System.out.println("Error...LinkedList is Empty.");
+            return;
+        }
+        head = head.next;
+    }
 }
