@@ -102,4 +102,18 @@ public class SinglyLinkedList {
     public void deleteLinkedList() {
         head = null;
     }
+
+    public boolean contains(int data) {
+        if (isEmpty()) {
+            return false;
+        }
+        Node temp = head;
+        while (temp != null) {
+            if (temp.data == data) {
+                return true;
+            }
+            temp = temp.next;
+        }
+        return false;
+    }
 }
