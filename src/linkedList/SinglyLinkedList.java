@@ -17,4 +17,10 @@ public class SinglyLinkedList {
             this.next = null;
         }
     }
+
+    Node head;
+
+    public SinglyLinkedList() {
+        this.head = null;
+    }
 }
